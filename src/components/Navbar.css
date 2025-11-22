@@ -1,46 +1,70 @@
 .navbar {
-  position: fixed;     
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 0 40px;
-  background: #111111;    
-  color: #ffffff;
+  background: #111111;    /* fond très sombre */
+  color: #ece4d6;         /* crème partout */
   z-index: 1000;
 }
 
-
-.navbar-center {
+/* Menu gauche */
+.navbar-left {
   display: flex;
   gap: 25px;
-  margin-left: 570px;
 }
 
-.navbar-center a {
+.navbar-left a {
   text-decoration: none;
-  color: #ffffff;
+  color: #ece4d6;          /* crème comme le logo */
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  transition: color 0.2s;
 }
 
-.navbar-center a:hover {
-  color: #f44336;          
+.navbar-left a:hover,
+.navbar-right a:hover {
+  color: #496ee9;          /* bleu techno pour l'accent */
 }
 
-
+/* Infos à droite */
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 25px;
 }
 
-.nav-phone, .nav-mail {
-  color: #ffffff;
+.nav-phone,
+.nav-mail {
+  color: #ece4d6;          /* crème harmonisé */
   text-decoration: none;
   font-size: 14px;
+  transition: color 0.2s;
+}
+
+.icon-mail,
+.icon-phone {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+  fill: #ece4d6;           /* icône en crème, si SVG */
+}
+
+/* Logo RP au centre */
+.navbar-logo-rp {
+  font-family: 'Impact', 'Arial Black', 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ece4d6;
+  letter-spacing: 2px;
+  background: transparent;
+  padding: 0 10px;
+  line-height: 1.1;
 }

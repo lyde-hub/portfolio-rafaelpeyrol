@@ -14,6 +14,21 @@ h1,h2{
   height: auto;
 }
 
+
+section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0 32px 0;    /* moins d’espace en bas (avant : 80px) */
+  min-height: 280px;         /* optionnel, réduit la hauteur minimale */
+} 
+
+
+
+
+
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -28,5 +43,3 @@ h1,h2{
     animation: logo-spin infinite 20s linear;
   }
 }
-
-
