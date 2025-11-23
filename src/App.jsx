@@ -12,7 +12,7 @@ function App() {
     <>
        <Navbar/>
       <section id="home">
-        <TypeWriter text="Rafael Peyrol" speed={80}/>
+        <TypeWriter text="Rafael Peyrol" speed={150} displayDuration={10000} />
         <h2>Étudiant en <br/>BUT INFORMATIQUE</h2>
       </section>
       <section id="about"><About/></section>
