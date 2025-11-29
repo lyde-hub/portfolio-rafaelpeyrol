@@ -6,7 +6,7 @@ function Navbar() {
       <nav className="navbar-left">
         <a href="#about">À propos</a>
         <a href="#skills">Compétences</a>
-        <a href="#Projets">Projets</a>
+        <a href="#projects">Projets</a>
         <a href="#contact">Contact</a>
       </nav>
 

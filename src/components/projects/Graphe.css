@@ -1,0 +1,79 @@
+.project-detail {
+  max-width: 900px;
+  margin: 100px auto 40px auto;
+  padding: 32px;
+  background: rgba(17, 22, 35, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(20, 30, 60, 0.5);
+  color: #ece4d6;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(134,161,185,0.7);
+  color: rgb(134, 161, 185);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.back-button:hover {
+  background: rgba(134,161,185,0.15);
+  border-color: #496ee9;
+  color: #ffffff;
+}
+
+.project-images {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.graphe-main {
+  width: 450px;      /* plus petit que 420px */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(10, 10, 30, 0.6);
+  object-fit: cover;
+}
+
+.graphe-tech {
+  width: 420px;      /* plus petit que 260px */
+  height: 400px;     /* hauteur réduite */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(10, 10, 30, 0.6);
+  object-fit: cover;
+}
+
+
+.project-detail h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: rgb(134, 161, 185);
+}
+
+.project-detail h2 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: rgb(134, 161, 185);
+}
+
+.project-detail p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.project-detail ul {
+  padding-left: 10px;
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.project-detail li {
+  margin-bottom: 4px;
+}

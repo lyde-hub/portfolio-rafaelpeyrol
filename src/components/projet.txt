@@ -1,0 +1,41 @@
+        <div className="lowatemProject">
+          <img src="src/assets/projet/lowatem.png" alt="lowa" className="lowatem" />
+          <img src="src/assets/langage/lowa2.png" alt="lowa2" className="lowatem" />
+        </div>
+
+        <div className="cuisineProject">
+          <img src="src/assets/projet/cuisine.png" alt="cuisiine" className="cook" />
+          <img src="src/assets/langage/cuisine2.png" alt="cuisine2" className="cook" />
+        </div>
+
+        <div className="grapheProject">
+          <img src="src/assets/projet/graphe.png" alt="graphe" className="graphe" />
+        </div>
+
+        <div className="iaDoomProject">
+          <img src="src/assets/projet/iadoom1.png" alt="doom1" className="doom" />
+          <img src="src/assets/langage/iadoom2.png" alt="doom2" className="doom" />
+        </div>
+
+        <div className="labyProject">
+          <img src="src/assets/projet/laby.png" alt="labyrinthe" className="laby" />
+          ajouter autre photo
+        </div>
+
+        <div className="odomoProject">
+          <img src="src/assets/projet/odomo.png" alt="odomo" className="odomo" />
+        </div>
+
+        <div className="saeFinalProject">
+          <img src="src/assets/projet/saeFinale1.png" alt="f1" className="finale" />
+          <img src="src/assets/projet/saeFinale2.png" alt="f2" className="finale" />
+          <img src="src/assets/projet/saeFinale3.png" alt="f3" className="finale" />
+          <img src="src/assets/projet/saeFinale4.png" alt="f4" className="finale" />
+        </div>
+
+        <div className="webProject">
+          <img src="src/assets/projet/web1.png" alt="web1" className="web" />
+          <img src="src/assets/langage/web2.png" alt="web2" className="web" />
+        </div>
+
+    </div>
