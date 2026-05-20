@@ -117,3 +117,29 @@
 .navbar-logo-rp:hover {
   color: #496ee9;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .navbar-left {
+    gap: 16px;
+  }
+
+  .navbar-left a {
+    font-size: 11px;
+  }
+
+  .navbar-mail,
+  .navbar-phone {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-left a[href="#stage"],
+  .navbar-left a[href="#contact"] {
+    display: none;
+  }
+}

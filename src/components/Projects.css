@@ -146,7 +146,7 @@
 
 .slider-img {
   width: 100%;
-  max-height: 280px;
+  max-height: 340px;
   object-fit: contain;
   border-radius: 14px;
   box-shadow: 0 6px 24px rgba(10, 10, 30, 0.6);
@@ -251,4 +251,43 @@
   font-size: 0.82rem;
   font-weight: 500;
   color: rgb(134, 161, 185);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 14px;
+  }
+
+  .modal-backdrop {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .modal-content {
+    padding: 32px 20px 28px;
+    border-radius: 24px 24px 0 0;
+    max-height: 92vh;
+  }
+
+  .modal-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .slider-img {
+    max-height: 220px;
+  }
+
+  .slider-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
