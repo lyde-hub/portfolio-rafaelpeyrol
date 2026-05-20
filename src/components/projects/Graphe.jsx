@@ -1,4 +1,7 @@
 import "./Graphe.css";
+import graphe from "../../assets/projet/graphe.png";
+import graphes2 from "../../assets/projet/graphes2.png";
+
 function graphePage() {
   return (
     <div className="project-detail">
@@ -8,8 +11,8 @@ function graphePage() {
       <h1>Application de graphe</h1>
 
       <div className="project-images">
-        <img src="/src/assets/projet/graphe.png" alt="graphe" className="graphe-main" />
-        <img src="/src/assets/projet/graphes2.png" alt="Technos Graphe" className="graphe-tech" />
+        <img src={graphe} alt="graphe" className="graphe-main" />
+        <img src={graphes2} alt="Technos Graphe" className="graphe-tech" />
       </div>
 
       <p>
