@@ -58,7 +58,7 @@ const projects = [
     thumbnail: cuisine,
     images: [cuisine, cuisine2],
     description: [
-      "Développement d'une application en ligne de commande de gestion de recettes de cuisine dans le cadre d'une SAE en BUT Informatique.",
+      "Développement d'une application en ligne de commande de gestion de recettes de cuisine dans le cadre d'un projet en BUT Informatique.",
       "L'application permet de consulter, ajouter et gérer des recettes culinaires directement depuis le terminal. Elle repose sur des scripts Bash pour la navigation, la saisie et l'affichage des recettes avec leurs ingrédients et étapes de préparation.",
     ],
     skills: [
@@ -127,8 +127,8 @@ const projects = [
     thumbnail: saeFinale1,
     images: [saeFinale1, saeFinale2, saeFinale3, saeFinale4],
     description: [
-      "Projet Bon Pote réalisé en équipe dans le cadre du BUT Informatique, centré sur l'analyse de données.",
-      "Ce projet comprend la conception d'une architecture logicielle complète avec analyse de données, gestion d'une base de données relationnelle et développement de l'application. Le projet a été mené en équipe avec une répartition claire des rôles et une intégration continue.",
+      "Développement du projet Bon Pote en équipe, centré sur l'analyse de données.",
+      "Ce projet comprend la conception d'une architecture logicielle complète avec analyse de données, gestion d'une base de données relationnelle et développement de l'application. Le projet a été mené en équipe avec une répartition claire des rôles.",
     ],
     skills: [
       "Analyse de données",
