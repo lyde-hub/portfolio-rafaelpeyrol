@@ -1,4 +1,5 @@
 import "./About.css";
+import photo from "../assets/photo.jpg";
 
 function About() {
   return (
@@ -6,7 +7,7 @@ function About() {
       <h1>À propos de moi</h1>
       <div className="about-divider" />
       <div className="about-content">
-        <img src="/src/assets/photo.jpg" alt="Rafael Peyrol" className="photo-portrait" />
+        <img src={photo} alt="Rafael Peyrol" className="photo-portrait" />
         <div className="about-card">
           <p>
             Je suis Rafael Peyrol, étudiant en deuxième année de BUT Informatique à Bordeaux.

@@ -1,4 +1,7 @@
 import "./Lowatem.css";
+import lowatem from "../../assets/projet/lowatem.png";
+import lowa2 from "../../assets/projet/lowa2.png";
+
 function LowatemPage() {
   return (
     <div className="project-detail">
@@ -8,8 +11,8 @@ function LowatemPage() {
       <h1>Projet Lowatem</h1>
 
       <div className="project-images">
-        <img src="/src/assets/projet/lowatem.png" alt="Lowatem" className="lowatem-main" />
-        <img src="/src/assets/projet/lowa2.png" alt="Technos Lowatem" className="lowatem-tech" />
+        <img src={lowatem} alt="Lowatem" className="lowatem-main" />
+        <img src={lowa2} alt="Technos Lowatem" className="lowatem-tech" />
       </div>
 
     <p> 

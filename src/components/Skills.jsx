@@ -1,15 +1,37 @@
 import "./Skills.css";
 
+import c from "../assets/langage/c.png";
+import csharp from "../assets/langage/csharp.png";
+import css from "../assets/langage/css.png";
+import html from "../assets/langage/html.png";
+import java from "../assets/langage/java.png";
+import js from "../assets/langage/js.png";
+import php from "../assets/langage/php.png";
+import python from "../assets/langage/python.png";
+import react from "../assets/langage/react.png";
+import sql from "../assets/langage/sql.png";
+import symfony from "../assets/langage/symfony.png";
+import git from "../assets/technologie/git.png";
+import vscode from "../assets/technologie/vscode.png";
+import netbeans from "../assets/technologie/netbeans.png";
+import visualStudio from "../assets/technologie/visualStudio.png";
+import arduino from "../assets/technologie/arduino.png";
+import windows from "../assets/technologie/windows.png";
+import linux from "../assets/technologie/linux.png";
+
+const langageImages = { c, csharp, css, html, java, js, php, python, react, sql, symfony };
+const technoImages  = { git, vscode, netbeans, visualStudio, arduino, windows, linux };
+
 const langages = ["c","csharp","css","html","java","js","php","python","react","sql","symfony"];
 const technos  = ["git","vscode","netbeans","visualStudio","arduino","windows","linux"];
 
-function MarqueeRow({ items, basePath }) {
+function MarqueeRow({ items, imageMap }) {
   const doubled = [...items, ...items];
   return (
     <div className="marquee-row">
       <div className="marquee-inner">
         {doubled.map((item, i) => (
-          <img key={i} src={`/src/assets/${basePath}/${item}.png`} alt={item} />
+          <img key={i} src={imageMap[item]} alt={item} />
         ))}
       </div>
     </div>
@@ -23,9 +45,9 @@ function Skills() {
       <div className="skills-divider" />
       <div className="skills-content">
         <p className="skills-label">Langages</p>
-        <MarqueeRow items={langages} basePath="langage" />
+        <MarqueeRow items={langages} imageMap={langageImages} />
         <p className="skills-label">Outils & Technologies</p>
-        <MarqueeRow items={technos} basePath="technologie" />
+        <MarqueeRow items={technos} imageMap={technoImages} />
       </div>
     </div>
   );

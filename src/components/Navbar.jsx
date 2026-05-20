@@ -1,4 +1,6 @@
 import "./Navbar.css";
+import mailIcon from "../assets/mail.svg";
+import phoneIcon from "../assets/phone.svg";
 
 function Navbar() {
   return (
@@ -17,12 +19,12 @@ function Navbar() {
 
       <div className="navbar-right">
         <div className="navbar-mail">
-          <img src="/src/assets/mail.svg" alt="mail" className="icon-mail" />
+          <img src={mailIcon} alt="mail" className="icon-mail" />
           <a href="mailto:peyrolrafael@hotmail.com" className="nav-mail">peyrolrafael@hotmail.com</a>
         </div>
 
         <div className="navbar-phone">
-          <img src="/src/assets/phone.svg" alt="phone" className="icon-phone" />
+          <img src={phoneIcon} alt="phone" className="icon-phone" />
           <a href="tel:+33768384938" className="nav-phone">+33 7 68 38 49 38</a>
         </div>
 
