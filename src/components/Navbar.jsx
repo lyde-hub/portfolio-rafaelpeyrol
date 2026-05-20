@@ -7,6 +7,7 @@ function Navbar() {
         <a href="#about">À propos</a>
         <a href="#skills">Compétences</a>
         <a href="#projects">Projets</a>
+        <a href="#stage">Stage</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -24,6 +25,8 @@ function Navbar() {
           <img src="/src/assets/phone.svg" alt="phone" className="icon-phone" />
           <a href="tel:+33768384938" className="nav-phone">+33 7 68 38 49 38</a>
         </div>
+
+        <a href="/cv-rafael-peyrol.pdf" download className="nav-cv-btn">CV</a>
       </div>
     </header>
   );

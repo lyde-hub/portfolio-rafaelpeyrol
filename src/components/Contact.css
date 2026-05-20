@@ -1,0 +1,102 @@
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 48px 40px;
+  background: rgba(17, 22, 40, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 24px;
+  border: 1px solid rgba(134, 161, 185, 0.1);
+  box-shadow: 0 8px 40px rgba(10, 12, 30, 0.4);
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.contact-divider {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #496ee9, #86a1b9);
+  border-radius: 2px;
+  margin: 0 auto 20px auto;
+}
+
+.contact-subtitle {
+  color: rgba(236, 228, 214, 0.6);
+  font-size: 0.95rem;
+  margin-bottom: 36px;
+}
+
+.contact-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 32px;
+  background: rgba(13, 15, 26, 0.5);
+  border: 1px solid rgba(134, 161, 185, 0.12);
+  border-radius: 16px;
+  text-decoration: none;
+  color: #ece4d6;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  min-width: 200px;
+}
+
+.contact-card:hover {
+  border-color: rgba(73, 110, 233, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(73, 110, 233, 0.2);
+  color: #ece4d6;
+}
+
+.contact-icon {
+  font-size: 1.6rem;
+  color: #496ee9;
+}
+
+.contact-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(134, 161, 185, 0.7);
+}
+
+.contact-value {
+  font-size: 0.9rem;
+  color: rgba(236, 228, 214, 0.85);
+}
+
+.cv-button {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 12px 32px;
+  background: linear-gradient(135deg, #496ee9, #3a55c0);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(73, 110, 233, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.cv-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(73, 110, 233, 0.55);
+  background: linear-gradient(135deg, #5a7ef5, #496ee9);
+  color: #ffffff;
+}
