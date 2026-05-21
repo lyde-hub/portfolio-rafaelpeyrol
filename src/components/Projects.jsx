@@ -25,22 +25,25 @@ function ProjectModal({ project, onClose }) {
         <button className="modal-close" onClick={onClose}>✕</button>
         <h1 className="modal-title">{project.title}</h1>
 
-        <div className="modal-slider">
-          {project.images.length > 1 && (
-            <button className="slider-arrow left" onClick={prev}>‹</button>
-          )}
-          <img src={project.images[imgIndex]} alt={`${project.title} ${imgIndex + 1}`} className="slider-img" />
-          {project.images.length > 1 && (
-            <button className="slider-arrow right" onClick={next}>›</button>
-          )}
-        </div>
-
-        {project.images.length > 1 && (
-          <div className="slider-dots">
-            {project.images.map((_, i) => (
-              <span key={i} className={`dot${i === imgIndex ? " active" : ""}`} onClick={() => setImgIndex(i)} />
-            ))}
-          </div>
+        {project.images.length > 0 && (
+          <>
+            <div className="modal-slider">
+              {project.images.length > 1 && (
+                <button className="slider-arrow left" onClick={prev}>‹</button>
+              )}
+              <img src={project.images[imgIndex]} alt={`${project.title} ${imgIndex + 1}`} className="slider-img" />
+              {project.images.length > 1 && (
+                <button className="slider-arrow right" onClick={next}>›</button>
+              )}
+            </div>
+            {project.images.length > 1 && (
+              <div className="slider-dots">
+                {project.images.map((_, i) => (
+                  <span key={i} className={`dot${i === imgIndex ? " active" : ""}`} onClick={() => setImgIndex(i)} />
+                ))}
+              </div>
+            )}
+          </>
         )}
 
         {project.description.map((para, i) => <p key={i}>{para}</p>)}
@@ -74,7 +77,10 @@ function Projects() {
       <div className="projects-grid">
         {projects.map((project) => (
           <div key={project.slug} className="project-card" onClick={() => setSelected(project)}>
-            <img src={project.thumbnail} alt={project.title} className="project-image" />
+            {project.thumbnail
+              ? <img src={project.thumbnail} alt={project.title} className="project-image" />
+              : <div className="project-image project-no-image" />
+            }
             <div className="project-overlay" />
             <h2 className="project-title">{project.title}</h2>
           </div>

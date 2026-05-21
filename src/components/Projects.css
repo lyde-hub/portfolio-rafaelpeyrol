@@ -59,6 +59,11 @@
   transform: scale(1.06);
 }
 
+.project-no-image {
+  background: linear-gradient(135deg, rgba(73, 110, 233, 0.15), rgba(134, 161, 185, 0.08));
+  height: 155px;
+}
+
 .project-overlay {
   position: absolute;
   inset: 0;
@@ -82,9 +87,9 @@
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: rgba(5, 8, 20, 0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   z-index: 1000;
   display: flex;
   align-items: center;

@@ -25,13 +25,24 @@ const technoImages  = { git, vscode, netbeans, visualStudio, arduino, windows, l
 const langages = ["c","csharp","css","html","java","js","php","python","react","sql","symfony"];
 const technos  = ["git","vscode","netbeans","visualStudio","arduino","windows","linux"];
 
+const labels = {
+  c: "C", csharp: "C#", css: "CSS", html: "HTML", java: "Java",
+  js: "JavaScript", php: "PHP", python: "Python", react: "React",
+  sql: "SQL", symfony: "Symfony", git: "Git", vscode: "VS Code",
+  netbeans: "NetBeans", visualStudio: "Visual Studio", arduino: "Arduino",
+  windows: "Windows", linux: "Linux",
+};
+
 function MarqueeRow({ items, imageMap }) {
   const doubled = [...items, ...items];
   return (
     <div className="marquee-row">
       <div className="marquee-inner">
         {doubled.map((item, i) => (
-          <img key={i} src={imageMap[item]} alt={item} />
+          <div key={i} className="marquee-item">
+            <img src={imageMap[item]} alt={item} />
+            <span className="marquee-label">{labels[item]}</span>
+          </div>
         ))}
       </div>
     </div>
