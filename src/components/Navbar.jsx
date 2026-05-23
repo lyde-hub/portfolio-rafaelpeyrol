@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <header className="navbar">
       <nav className="navbar-left">
-        <a href="#about">À propos</a>
+        <a href="#about">À propos de moi</a>
         <a href="#skills">Compétences</a>
         <a href="#projects">Projets</a>
         <a href="#stage">Stage</a>
@@ -41,7 +41,7 @@ function Navbar() {
 
       <div className={`mobile-menu${menuOpen ? " mobile-menu--open" : ""}`}>
         <nav className="mobile-menu-nav">
-          {[["#about","À propos"],["#skills","Compétences"],["#projects","Projets"],["#stage","Stage"],["#contact","Contact"]].map(([href, label], i) => (
+          {[["#about","À propos de moi"],["#skills","Compétences"],["#projects","Projets"],["#stage","Stage"],["#contact","Contact"]].map(([href, label], i) => (
             <a key={href} href={href} onClick={close} style={{ animationDelay: `${i * 60}ms` }}>
               <span className="mobile-menu-num">0{i + 1}</span>
               {label}

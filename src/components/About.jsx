@@ -14,7 +14,7 @@ function About() {
             Passionné par le développement logiciel et les algorithmes, je suis à la recherche
             d'une alternance pour mettre en pratique mes compétences dans un environnement professionnel.
             Bienvenue sur mon portfolio — vous y trouverez mes projets et les technologies
-            que j'ai eu l'occasion de maîtriser.
+            que j'ai eu l'occasion d'utiliser.
           </p>
           <a href="/cv-rafael-peyrol.pdf" download className="about-cv-btn">
             ↓ Télécharger mon CV

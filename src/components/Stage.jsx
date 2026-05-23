@@ -7,7 +7,7 @@ import stageImg2 from "../assets/stage/Folie44(1)(1).png";
 const stage = {
   titre: "Développement d'applications pour véhicule autonome",
   entreprise: "FGVT — Sarrebruck, Allemagne",
-  periode: "2025",
+  periode: "2026",
   logo: logoFgvt,
   description:
     "Stage au sein de la FGVT (Forschungsgesellschaft für angewandte Verkehrssystemtechnik), centre de recherche allemand spécialisé dans les systèmes de transport. Développement de modules logiciels pour véhicule autonome sous ROS2, intégration de nœuds de traitement de données capteurs et participation à la mise en place de l'architecture logicielle embarquée.",

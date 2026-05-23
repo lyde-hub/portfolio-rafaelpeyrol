@@ -18,19 +18,20 @@ import visualStudio from "../assets/technologie/visualStudio.png";
 import arduino from "../assets/technologie/arduino.png";
 import windows from "../assets/technologie/windows.png";
 import linux from "../assets/technologie/linux.png";
+import ros2 from "../assets/technologie/ros2.svg";
 
 const langageImages = { c, csharp, css, html, java, js, php, python, react, sql, symfony };
-const technoImages  = { git, vscode, netbeans, visualStudio, arduino, windows, linux };
+const technoImages  = { git, vscode, netbeans, visualStudio, arduino, windows, linux, ros2 };
 
 const langages = ["c","csharp","css","html","java","js","php","python","react","sql","symfony"];
-const technos  = ["git","vscode","netbeans","visualStudio","arduino","windows","linux"];
+const technos  = ["git","vscode","netbeans","visualStudio","arduino","windows","linux","ros2"];
 
 const labels = {
   c: "C", csharp: "C#", css: "CSS", html: "HTML", java: "Java",
   js: "JavaScript", php: "PHP", python: "Python", react: "React",
   sql: "SQL", symfony: "Symfony", git: "Git", vscode: "VS Code",
   netbeans: "NetBeans", visualStudio: "Visual Studio", arduino: "Arduino",
-  windows: "Windows", linux: "Linux",
+  windows: "Windows", linux: "Linux", ros2: "ROS2",
 };
 
 function MarqueeRow({ items, imageMap }) {
