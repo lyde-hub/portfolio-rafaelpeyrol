@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Stage from "./components/Stage";
 import Contact from "./components/Contact";
+import Alternance from "./components/Alternance";
 import TypeWriter from "./components/TypeWriter";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <a href="#about" className="scroll-down">↓</a>
       </section>
       <section id="about"><About /></section>
+      <section id="alternance"><Alternance /></section>
       <section id="skills"><Skills /></section>
       <section id="projects"><Projects /></section>
       <section id="stage"><Stage /></section>
